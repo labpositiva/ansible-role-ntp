@@ -1,0 +1,4 @@
+---
+# defaults file for labpositiva.ntp
+
+ntp_server: amazon
