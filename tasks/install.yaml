@@ -1,0 +1,10 @@
+---
+# task for dgnest.ntp
+
+- name: Install ntp
+  package: name="{{ _ntp_package_name }}" state=present
+  become: true
+  register: install_ntp
+  when: _ntp_package_name is defined
+  tags:
+    - install
